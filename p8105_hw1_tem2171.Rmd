@@ -13,24 +13,17 @@ data("early_january_weather")
 
 ```
 
-```{r description of dataset}
-nrow(early_january_weather)
-
-ncol(early_january_weather)
-
-mean_temp <- mean(early_january_weather$temp)
-```
-
 ## Short description of early_january_weather dataset
 
 the variables in this dataset:
 origin (EWR), year (2013), month (1/january), day(1-15), hour(1-23), temp(F), dewp(F), humid(%), wind_dir(angle), wind_speed(mph), wind_gust (mph), precip (in), pressure (mmhg), visib (mi), time_hour(date and hour)
 
 the size of the dataset:
-rows: 358
-columns:15
+rows:`r nrow(early_january_weather)`
 
-the mean temperature: 39.58
+columns:`r ncol(early_january_weather)`
+
+the mean temperature: `r mean(early_january_weather$temp)`
 
 ```{r scatterplot}
 library(ggplot2)
