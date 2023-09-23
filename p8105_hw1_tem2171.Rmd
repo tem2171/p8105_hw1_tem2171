@@ -73,10 +73,16 @@ mean_vec_factor <- mean(numeric_vec_factor)
 ```
 # means: 
 random sample: -0.225
+
 vec_logical:0.5
+
 vec_char: argument is not numeric or logical: returning NA
+
 vec_factor:argument is not numeric or logical: returning NA
 
+
 numeric_vec_factor: 2.3
+
 numeric_vec_char: NA
+
 (character vectors do not have an inherent order like factor vectors, so using as.numeric does not work to find the mean)
